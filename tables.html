@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="1" width="65%" cellpadding="10" cellspacing="10"> <!--border tagi köşe bir tablo oluşturur ve yeni tarayıcıların desteklemediği tagler kırmızı ile gösterilir editörler tarafından.cellpadding de ise hücre içindeki bilgilerin hücrenin köşelreine olan uzaklığı ayarlar.cellspacing ise hücrelere arası mesafeyi ayarlar.-->
+       <thead><!--thead içine tablo başlığı yazılır fakat tr içine td yerine th yazılır-->
+        <tr>
+            <th>id</th>
+            <th>ürün ismi</th>
+            <th>fiyat</th>
+            <th>resim</th>
+
+        </tr>
+       </thead> 
+       <tbody> <!--tbody içinde tablodaki veriler yazılır-->
+        <tr> <!--tr tagi satiri td tagi ise sutun sayısını belirler.-->
+            <td>1</td>
+            <td>iphone 11</td>
+            <td>23000</td>
+            <td>1.jpeg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="2">iphone 12</td><!--rowspan tagi altlı üstlü olan hücreleri birleştirir içine yazılan değer kadar.-->
+            <td>35000</td>
+            <td>2.jpeg</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">52000 - 3.jpeg</td><!--colspan tagi yanyana olan hücreleri birleştirir içine yazılan değer kadar.-->
+        </tr>
+        </tbody>
+    </table>
+    
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="register.php"> <!--form oluşturup action içindeki adrese dosyaya yönlendiririz.-->
+        <div>
+            <label for="name">Adiniz</label><!--label ile etiket oluşturup girdinin ismini belirleyebiliriz.-->
+            <input type="text" id="name"> <!--kullanıcıdan bilgi almak için kullanılır.input yazınca çıkan name kısmı register.php de çıkacak id bilgisidir.id bilgisi ise o anda html sayfasında kullandığımız id bilgisidir.-->
+        </div>
+        <div>
+            <label for="surname">Soyadiniz</label>
+            <input type="text"  id="surname"> <!--input içerisine tek satır bilgi yazılabilir.-->
+        </div>
+        <div>
+            <label for="parola">Parola</label>
+            <input type="password" id="parola">
+        </div>
+        <div>
+            <label for="intro">Kendini Anlat</label>
+            <textarea id="intro" required></textarea> <!--textarea içine istenilen sayıda bilgi yazılabilir.cols="" kolon sayısını rows="" satır sayısını belirler. required ile o alan boş bırakılamaz boş bırakılırsa uyarı mesajı alır kullanıcı.-->
+        </div>
+        <div>
+            <p>En Sevdiğin Programlama Dili Nedir?</p>
+            <input type="radio"  id="html" name="Programlama"> <!--radio buttonu seçme işlemleri için kullanılır.-->
+            <label for="html">HTML</label>
+        </div>
+        <div>
+            <input type="radio"  id="CSS" name="Programlama"><!--name bilgisi verirsek bunlar aynı grubun elemanı olacağı için sadece bir tanesi seçilir.-->
+            <label for="CSS">CSS</label>
+        </div>
+        <div>
+            <input type="radio"  id="js" name="Programlama">
+            <label for="js">JS</label>
+        </div>
+        <div>
+            <p>En Sevdiğin Programlama Dili Nedir?</p>
+            <input type="checkbox" id="html2"> <!--İstediğiniz kadar checkbox tanımlayarak kullanıcıdan sınırsız seçme hakkı isteyebiliriz.-->
+            <label for="html2">HTML</label>
+            <input type="checkbox" id="CSS2">
+            <label for="CSS2">CSS</label>
+            <input type="checkbox" id="JS2">
+            <label for="js2">JS</label>
+        </div>
+        <div>
+            <label for="cities">Şehirler</label>
+            <select id="cities">
+                <option value="38">Kayseri</option><!--her bir option bilgisi kullanıcının seçebileceği bir değere karşılık gelir-->
+                <option value="28">Giresun</option>
+                <option value="34">İstanbul</option>    
+            </select>
+        </div>
+        <div>
+            <label for="eposta">Email</label>
+            <input type="email" id="eposta"><!--kullanıcıdan email bilgisi almak için type email kullanılır.-->
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <button type="submit">Kaydet</button> <!--button içine yazılan yazı button üzerinde görürülür.submit aldığı bilgiyi kaydedip gönderir.-->
+        <button type="reset">Tenizle</button> <!--reset ile sayfadaki bilgiler sıfırlanır.-->
+    </form>
+</body>
+</html>
